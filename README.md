@@ -74,10 +74,24 @@ You can modify this file to simulate:
 - Out‑of‑order timestamps
 
 ▶️ Running the App
-From the project root:
-cd src/TransactionsIngest
-dotnet run
+Prerequisites
+•	Install .NET 10 SDK: download from Microsoft.
+•	(Optional) dotnet-ef tool if you want to run EF migrations manually: dotnet tool install --global dotnet-ef
+Basic build and run
+1.	Clone the repo and open a terminal in the repo root.
+2.	Restore dependencies: dotnet restore
+3.	Build: dotnet build
+4.	Run the app (replace project path if different): dotnet run --project src/TransactionIngest
+	
 
+Database / EF Core notes
+•	The app uses SQLite and runs Database.MigrateAsync() at startup. Ensure the connection string in appsettings.json or environment variable ConnectionStrings__Default points to a writable SQLite file (e.g. Data Source=transactions.db).
+•	To apply migrations manually:
+1.	Install dotnet-ef if needed: dotnet tool install --global dotnet-ef
+2.	Run: dotnet ef database update --project src/TransactionIngest --startup-project src/TransactionIngest
+•	If you need a clean DB (useful when migrations fail due to existing data), delete the DB file before running:
+•	macOS/Linux: rm -f transactions.db
+•	Windows (Powershell/CMD): del transactions.db
 
 The ingestion job will:
 - Apply migrations
