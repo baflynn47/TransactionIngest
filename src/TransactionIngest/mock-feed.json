@@ -5,7 +5,7 @@
     "locationCode": "STO-01",
     "productName": "Wireless Mouse",
     "amount": 29.99,
-    "timestamp": "2026-03-18T08:50:10Z"
+    "timestamp": "2026-03-19T08:50:10Z"
   },
   {
     "transactionId": 1002,
@@ -13,7 +13,7 @@
     "locationCode": "STO-02",
     "productName": "USB-C Cable",
     "amount": 25.00,
-    "timestamp": "2026-03-18T06:15:30Z"
+    "timestamp": "2026-03-19T06:15:30Z"
   },
   {
     "transactionId": 1003,
@@ -21,7 +21,7 @@
     "locationCode": "STO-03",
     "productName": "Bluetooth Keyboard",
     "amount": 45.50,
-    "timestamp": "2026-03-18T09:10:05Z"
+    "timestamp": "2026-03-19T09:10:05Z"
   },
   {
     "transactionId": 1004,
@@ -29,7 +29,7 @@
     "locationCode": "STO-01",
     "productName": "Laptop Stand",
     "amount": 32.00,
-    "timestamp": "2026-03-18T04:22:18Z"
+    "timestamp": "2026-03-19T04:22:18Z"
   },
   {
     "transactionId": 1005,
@@ -37,7 +37,7 @@
     "locationCode": "STO-04",
     "productName": "HDMI Cable",
     "amount": 14.99,
-    "timestamp": "2026-03-18T07:45:00Z"
+    "timestamp": "2026-03-19T07:45:00Z"
   },
   {
     "transactionId": 1006,
@@ -45,7 +45,7 @@
     "locationCode": "STO-02",
     "productName": "Portable Charger",
     "amount": 29.95,
-    "timestamp": "2026-03-18T08:05:42Z"
+    "timestamp": "2026-03-19T08:05:42Z"
   },
   {
     "transactionId": 1007,
@@ -53,7 +53,7 @@
     "locationCode": "STO-05",
     "productName": "Webcam",
     "amount": 54.99,
-    "timestamp": "2026-03-18T03:55:12Z"
+    "timestamp": "2026-03-19T03:55:12Z"
   },
   {
     "transactionId": 1008,
@@ -61,15 +61,15 @@
     "locationCode": "STO-03",
     "productName": "USB Hub",
     "amount": 22.49,
-    "timestamp": "2026-03-18T09:25:33Z"
+    "timestamp": "2026-03-19T09:25:33Z"
   },
   {
     "transactionId": 1009,
     "cardNumber": "5555555555554444",
     "locationCode": "STO-01",
     "productName": "Desk Lamp",
-    "amount": 28.75,
-    "timestamp": "2026-03-18T05:40:00Z"
+    "amount": 108.75,
+    "timestamp": "2026-03-19T05:40:00Z"
   },
   {
     "transactionId": 1010,

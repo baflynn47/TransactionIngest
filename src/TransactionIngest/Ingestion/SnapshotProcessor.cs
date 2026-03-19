@@ -63,21 +63,6 @@ public class SnapshotProcessor
                     Details = $"Inserted transaction {dto.TransactionId}"
                 });
 
-                //if (dto.Timestamp < cutoff)
-                //{
-                //    _logger.LogInformation("Finalizing transaction {Id}", record.TransactionId);
-
-                //    record.Status = TransactionStatus.Finalized;
-
-                //    _db.Audits.Add(new TransactionAudit
-                //    {
-                //        Record = record,
-                //        Timestamp = now,
-                //        ChangeType = "Finalize",
-                //        Details = $"Transaction {record.TransactionId} finalized (>24h old)"
-                //    });
-                //}
-
                 continue;
             }
 
@@ -150,20 +135,6 @@ public class SnapshotProcessor
                     Details = "Revoked → Active (reappeared in snapshot)"
                 });
             }
-            else if (dto.Timestamp < cutoff)
-            {
-                _logger.LogInformation("Finalizing transaction {Id}", record.TransactionId);
-
-                record.Status = TransactionStatus.Finalized;
-
-                _db.Audits.Add(new TransactionAudit
-                {
-                    Record = record,
-                    Timestamp = now,
-                    ChangeType = "Finalize",
-                    Details = $"Transaction {record.TransactionId} finalized (>24h old)"
-                });
-            }
         }
 
         // REVOCATION: any existing record not seen in snapshot
@@ -208,6 +179,6 @@ public class SnapshotProcessor
             });
         }
 
-        await _db.SaveChangesAsync();
+        await _db.SaveChangesIgnoringUniqueViolationsAsync();
     }
 }
