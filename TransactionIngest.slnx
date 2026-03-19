@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="src/TransactionIngest/TransactionIngest.csproj" />
+  <Project Path="tests/TransactionIngest.Test/TransactionIngest.Test.csproj" Id="3b0b8d61-27aa-4400-b051-c21ce263c91b" />
+</Solution>
